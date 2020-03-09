@@ -37,11 +37,11 @@ function App() {
   model.addAll(node1, node2, link2);
 
   // ****** Uncomment this for loop to generate large number of nodes ********
-  // for (var i = 0; i < 6; i++) {
-  //   for (var j = 0; j < 6; j++) {
-  //     generateNodes(model, i * 300, j * 300);
-  //   }
-  // }
+  for (var i = 0; i < 6; i++) {
+    for (var j = 0; j < 6; j++) {
+      generateNodes(model, i * 300, j * 300);
+    }
+  }
   
   // Generates 3 nodes with links
   function generateNodes(model: DiagramModel, offsetX: number, offsetY: number) {
